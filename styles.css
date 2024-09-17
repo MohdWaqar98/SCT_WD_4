@@ -1,0 +1,104 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text color for contrast */
+}
+
+.todo-container {
+    background: rgba(255, 255, 255, 0.95); /* White background with slight transparency */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    width: 90%; /* Full width with 10% margin */
+    max-width: 800px; /* Maximum width for larger screens */
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333; /* Darker text color for heading */
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="datetime-local"] {
+    padding: 15px;
+    border: 1px solid #ccc; /* Lighter border for better visibility */
+    border-radius: 6px;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    width: 100%;
+    box-sizing: border-box;
+    background: #fff; /* White background for inputs */
+    color: #333; /* Dark text color for readability */
+}
+
+button {
+    padding: 15px;
+    background-color: #007bff; /* Bright button color */
+    color: #fff; /* White text color */
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s, transform 0.2s;
+    width: 100%; /* Full-width button */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker shade for hover */
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+.task-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.task-list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff; /* Bright background for task items */
+    border: 1px solid #ddd; /* Light border for task items */
+    border-radius: 6px;
+    padding: 15px;
+    margin-bottom: 15px;
+    font-size: 1.2rem; /* Larger text size for better readability */
+    color: #333; /* Dark text color */
+    width: 100%; /* Full-width task items */
+}
+
+.task-list li.completed {
+    text-decoration: line-through;
+    color: #aaa; /* Light gray for completed tasks */
+}
+
+.task-list button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: #007bff; /* Button color */
+    transition: color 0.3s;
+}
+
+.task-list button:hover {
+    color: #0056b3; /* Darker shade for hover */
+}
